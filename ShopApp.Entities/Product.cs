@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace ShopApp.Entities
 {
-    internal class Product
+    public class Product
     {
+        public int ProductID { get; set; }
+        public string ProductName { get; set; }
+        public string ProductImageURL { get; set; }
+        public decimal ProductPrice { get; set; }
+
+        public List<ProductCategory> ProductCategories { get; set; }
     }
 }
